@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Resume</title>
+  <script src="https://kit.fontawesome.com/9aeda68ef6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+  
+  <style>
+    @import url('https://font.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+/*.{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}*/
+
+body {
+
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background-color: #fff;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+
+}
+
+.container .left_side {
+  position: relative;
+  background: #003147;
+  padding: 40px;
+
+}
+
+.ProfileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ProfileText .ImgBx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ProfileText .ImgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ProfileText h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.ProfileText h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contactInfo {
+  padding-top: 7px;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.text {
+  margin-left: 20px;
+}
+
+.icon {
+  color: #03a9f4;
+}
+
+.percent {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: #081921;
+  display: block;
+
+}
+
+.percent div {
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.colr {
+  color: #fff;
+  font-size: 15px;
+}
+
+/*.contactInfo ul{
+  position: relative;
+}
+
+.contactInfo ul li{
+  position: relative;
+  list-style: none;
+  margin: 10px 1px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.contactInfo ul li .icon{
+  display: inline;
+  width: 30px;
+  font-size: 15px;
+  color: #03a9f4;
+  margin-right: 10px;
+  
+}
+
+.contactInfo ul li .span{
+  color: #fff;
+  font-weight: 300;
+
+}*/
+
+.edu {
+  color: black;
+}
+
+
+
+.container .right_side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-top: 0;
+
+}
+
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .box h4 {
+  text-transform: uppercase;
+  color: #848c99;
+  font-weight: 500;
+
+}
+
+.skills .box .percent1 {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
+}
+
+.skills .box .percent1 div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.interest ul{
+  display: flex;
+  grid-template-columns: repeat(3,1fr);
+}
+
+li{
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  
+}
+.fa{
+  color: #03a9f4;
+  font-size: 18px;
+}
+  </style>
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="left_side">
+      <div class="ProfileText">
+        <div class="imgBx">
+          <img style="border-radius:50%;" src="mypic.jpeg" width="200px" height="200px">
+        </div>
+        <h2>Muhammad Saad<br><span>Oracle Developer</span></h2>
+      </div>
+      <div class="contactInfo">
+        <h3 class="title">Contact Info</h3>
+        <p><i class='fa fa-phone icon'></i><span class="text">+923172545592</span></p>
+        <p><i class='fa fa-envelope-o icon'></i><span class="text">saadramzan780@gmail.com</span></p>
+        <p><i class='fa fa-map-marker icon'></i><span class="text">Karachi, Pakistan</span></p>
+
+      </div>
+
+      <div class="contactInfo education">
+        <h3 class="title">EDUCATION</h3>
+
+        <h3 class="edu">Bachelor of Science: Continue <br><span style="color: #03a9f4; font-size: 13px;">Studying in
+            BSSE from Dha Suffa University,
+            Karachi<span></h3>
+
+        <h4 class="edu">Associate of Science: (Engineering) <span style="color:#03a9f4; font-size: 13px;">Intermediate
+            From Board of Karachi -
+            Karachi<span></h4>
+
+        <h3 class="edu">High School Diploma:<br> <span style="color:#03a9f4; font-size: 13px;">Board of Secondary
+            Education Karachi -
+            Karachi<span></h3>
+      </div>
+      <div class="contactInfo languages">
+        <h3 class="title">Language</h3>
+        <h6 class="colr">Urdu <span class="percent">
+            <div style="width: 90%;"></div>
+          </span></h6>
+
+        <h6 class="colr">English <span class="percent">
+            <div style="width: 45%;"></div>
+          </span></h6>
+      </div>
+    </div>
+
+
+
+    <div class="right_side">
+      <div class="about">
+        <h2 class="title2">Profile</h2>
+        <p>Looking for a good opportunity to enhance my skills.</p>
+        <p>Detail-oriented team player with strong organizational skills. Ability to handle multiple projects
+          simultaneously with a high degree of accuracy.</p>
+      </div>
+
+
+      <div class="about">
+        <h2 class="title2">Experience</h2>
+        <h3>Junior Oracle Developer</h3>
+        <p>Developed or customized Oracle reports and
+          forms to meet functional business
+          requirements.</p>
+        <p>Customized or developed Oracle workflows to
+          meet company business processes.
+        </p>
+        <p>Followed standard methodologies on coding
+          to write clean and self-documenting code.
+        </p>
+        <p>Liaised with end users and functional analysts
+          to perform unit, system and regression testing.</p>
+      </div>
+
+      <div class="about skills">
+        <h2 class="title2">Professional skills</h2>
+        <div class="box">
+
+          <h4>Oracle Database 10g, 11g</h4>
+          <div class="percent1">
+            <div style="width: 65%;"></div>
+
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>SQL, PLSQL</h4>
+          <div class="percent1">
+            <div style="width: 65%;"></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>HTML</h4>
+          <div class="percent1">
+            <div style="width: 80%;"></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>CSS</h4>
+          <div class="percent1">
+            <div style="width: 60%;"></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>JAVA SCRIPT</h4>
+          <div class="percent1">
+            <div style="width: 45%;"></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>BOOTSTRAP</h4>
+          <div class="percent1">
+            <div style="width: 75%;"></div>
+          </div>
+        </div>
+        </div>
+        <div class="about interest"></div>
+        <h2 class="title2">Interest</h2>
+        <ul>
+          <li><i class="fa fa-futbol-o" aria-hidden="true"></i><span style="margin-left: 15px; margin-top: 50px;">Cricket</span></li><br>
+          <li><i class='fa fa-gamepad'></i><span style="margin-left: 15px; margin-top: 20px;">Gaming</span></li><br>
+          <li><i class='fa fa-car'></i><span style="margin-left: 15px; margin-top: 20px;"></span>Traveling</span></li><br>
+        </ul>
+</div>
+</div>
+
+</body>
+
+</html>
